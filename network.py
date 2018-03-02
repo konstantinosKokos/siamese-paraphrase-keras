@@ -31,7 +31,7 @@ def read_data(dissimilarity_ratio, batch_size):
     current_file = 0
     x0, x0sh, x0sw, x1, x1sh, x1sw, y = [], [], [], [], [], [], []
 
-    with open('../data/dump_'+str(current_file), 'rb') as f:
+    with open('..data/dump_'+str(current_file), 'rb') as f:
         x0s, x1s = pickle.load(f)        
     while True:
         if current_sample > x0s.shape[0]:
