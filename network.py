@@ -63,14 +63,13 @@ def read_data(dissimilarity_ratio, batch_size):
             yield  [np.array(x0), np.array(x0sh), np.array(x0sw), 
                     np.array(x1), np.array(x1sh), np.array(x1sw)], np.array(y)
             x0, x0sh, x0sw, x1, x1sh, x1sw, y = [], [], [], [], [], [], []
-        else:
-            x0.append(next_x0)
-            x0sh.append(next_x0sh)
-            x0sw.append(next_x0sw)
-            x1.append(next_x1)
-            x1sh.append(next_x1sh)
-            x1sw.append(next_x1sw)
-            y.append(next_y)
+        x0.append(next_x0)
+        x0sh.append(next_x0sh)
+        x0sw.append(next_x0sw)
+        x1.append(next_x1)
+        x1sh.append(next_x1sh)
+        x1sw.append(next_x1sw)
+        y.append(next_y)
             
 # ==============================================================================================================
 # UTILITY WRAPPERS 
